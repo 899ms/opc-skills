@@ -2307,7 +2307,7 @@ async function renderBlogListPage(ctx) {
       </a>
       <div class="blog-content">
         <div class="blog-meta">
-          <time datetime="${post.date}">${new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
+          <time datetime="${post.date}">${new Date(post.date).toLocaleDateString("en-US", { timeZone: "UTC", year: "numeric", month: "long", day: "numeric" })}</time>
           <span class="blog-category">${post.category}</span>
         </div>
         <h2><a href="/blog/${post.slug}">${post.title}</a></h2>
@@ -2847,7 +2847,7 @@ async function renderBlogPost(slug, ctx) {
       <h1>${post.title}</h1>
       <div class="article-meta">
         <span class="category-badge">${post.category}</span>
-        <span>📅 ${new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+        <span>📅 ${new Date(post.date).toLocaleDateString("en-US", { timeZone: "UTC", year: "numeric", month: "long", day: "numeric" })}</span>
         <span>✍️ ${post.author}</span>
         <span>⏱️ ${post.readTime}</span>
       </div>
