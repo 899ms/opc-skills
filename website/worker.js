@@ -915,6 +915,15 @@ Agent Skills Standard: https://agentskills.io
     .commands-list { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
     .commands-list code { font-size: 10px; padding: 6px 10px; background: var(--gray-50); border: 1px solid var(--gray-200); display: block; overflow-x: auto; }
     
+    .featured { max-width: 900px; margin: 0 auto; padding: 0 24px 48px; }
+    .featured-card { border: 2px solid var(--black); padding: 24px; }
+    .featured-banner { width: 100%; height: auto; display: block; margin-bottom: 20px; border: 1px solid var(--gray-200); }
+    .featured-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
+    .featured-head h3 { font-size: 16px; font-weight: 700; }
+    .featured-links { display: flex; gap: 16px; flex-wrap: wrap; font-size: 11px; }
+    .featured-links a { color: var(--gray-600); }
+    .featured-links a:hover { color: var(--black); }
+
     .faq-section { max-width: 900px; margin: 0 auto; padding: 48px 24px; border-top: 1px solid var(--gray-200); }
     .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .faq-item { padding: 20px; border: 1px solid var(--gray-200); background: var(--gray-50); }
@@ -980,6 +989,8 @@ Agent Skills Standard: https://agentskills.io
       
       .commands-list code { font-size: 9px; white-space: nowrap; overflow-x: auto; display: block; }
       
+      .featured { padding: 0 16px 32px; }
+      .featured-card { padding: 16px; }
       .faq-section { padding: 32px 16px; }
       .faq-grid { grid-template-columns: 1fr; gap: 16px; }
       .faq-item { padding: 16px; }
@@ -1119,6 +1130,33 @@ Agent Skills Standard: https://agentskills.io
     <div class="skills-grid">${skillCards}</div>
   </main>
 
+  <section class="featured" aria-label="More from ReScience Lab">
+    <h2 class="section-title">More from ReScience Lab</h2>
+    <div class="featured-card">
+      <a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/ReScienceLab/super-prototyping/main/assets/banner.webp" alt="super-prototyping - HTML artboards on a local tldraw canvas" class="featured-banner" loading="lazy" decoding="async">
+      </a>
+      <div class="featured-head">
+        <h3><a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">super-prototyping</a></h3>
+        <span class="version">v1.2.0</span>
+        <span class="auth-tag free">Free</span>
+      </div>
+      <p class="skill-desc">Rebuild and design product UI as self-contained HTML artboards on a local tldraw canvas. Clone a real app from screenshots by measurement, design new screens from measured tokens, and drive the canvas that shows them.</p>
+      <div class="skill-triggers"><span class="trigger">design</span><span class="trigger">ui</span><span class="trigger">prototyping</span><span class="trigger">tldraw</span><span class="trigger">mockups</span><span class="trigger">screenshots</span><span class="trigger">design tokens</span></div>
+      <div class="install-section">
+        <div class="install-cmd">
+          <code class="cmd-display">npx skills add ReScienceLab/super-prototyping</code>
+          <button class="copy-btn" onclick="navigator.clipboard.writeText('npx skills add ReScienceLab/super-prototyping').then(() => { this.textContent='Copied!'; setTimeout(() => this.textContent='Copy', 1000); })">Copy</button>
+        </div>
+      </div>
+      <div class="featured-links">
+        <a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a>
+        <a href="https://prototyping.rescience.com" target="_blank" rel="noopener noreferrer">prototyping.rescience.com &rarr;</a>
+        <a href="https://github.com/ReScienceLab/super-prototyping#install" target="_blank" rel="noopener noreferrer">Claude Code plugin install &rarr;</a>
+      </div>
+    </div>
+  </section>
+
   <section class="faq-section" aria-label="Frequently Asked Questions">
     <h2 class="section-title">Frequently Asked Questions</h2>
     <div class="faq-grid">
@@ -1168,7 +1206,7 @@ Agent Skills Standard: https://agentskills.io
   </section>
 
   <footer>
-    <p>2026 <a href="https://rescience.com" target="_blank" rel="noopener noreferrer">ReScience Lab</a> | <a href="mailto:hi@opc.dev">hi@opc.dev</a> | <a href="https://github.com/ReScienceLab/opc-skills" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="/skills.json">API</a></p>
+    <p>2026 <a href="https://rescience.com" target="_blank" rel="noopener noreferrer">ReScience Lab</a> | <a href="mailto:hi@opc.dev">hi@opc.dev</a> | <a href="https://github.com/ReScienceLab/opc-skills" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="/skills.json">API</a> | <a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer">super-prototyping</a></p>
   </footer>
 
   <div class="toast" id="toast">Copied to clipboard!</div>
