@@ -915,7 +915,7 @@ Agent Skills Standard: https://agentskills.io
     .commands-list { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
     .commands-list code { font-size: 10px; padding: 6px 10px; background: var(--gray-50); border: 1px solid var(--gray-200); display: block; overflow-x: auto; }
     
-    .featured { max-width: 900px; margin: 0 auto; padding: 0 24px 48px; }
+    .featured { max-width: 900px; margin: 0 auto; padding: 40px 24px 0; }
     .featured-card { border: 2px solid var(--black); padding: 24px; }
     .featured-banner { width: 100%; height: auto; display: block; margin-bottom: 20px; border: 1px solid var(--gray-200); }
     .featured-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
@@ -989,7 +989,7 @@ Agent Skills Standard: https://agentskills.io
       
       .commands-list code { font-size: 9px; white-space: nowrap; overflow-x: auto; display: block; }
       
-      .featured { padding: 0 16px 32px; }
+      .featured { padding: 32px 16px 0; }
       .featured-card { padding: 16px; }
       .faq-section { padding: 32px 16px; }
       .faq-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -1125,11 +1125,6 @@ Agent Skills Standard: https://agentskills.io
     </div>
   </section>
 
-  <main>
-    <h2 class="section-title">Available Skills</h2>
-    <div class="skills-grid">${skillCards}</div>
-  </main>
-
   <section class="featured" aria-label="More from ReScience Lab">
     <h2 class="section-title">More from ReScience Lab</h2>
     <div class="featured-card">
@@ -1156,6 +1151,11 @@ Agent Skills Standard: https://agentskills.io
       </div>
     </div>
   </section>
+
+  <main>
+    <h2 class="section-title">Available Skills</h2>
+    <div class="skills-grid">${skillCards}</div>
+  </main>
 
   <section class="faq-section" aria-label="Frequently Asked Questions">
     <h2 class="section-title">Frequently Asked Questions</h2>
