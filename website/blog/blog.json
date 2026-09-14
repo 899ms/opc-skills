@@ -1,6 +1,111 @@
 {
   "posts": [
     {
+      "slug": "super-prototyping-measured-ui-clones",
+      "title": "Clone Any App Screen — and Prove It: Introducing super-prototyping",
+      "description": "super-prototyping rebuilds product UI as self-contained HTML artboards on a local tldraw canvas. Hand your agent screenshots and every colour and metric in the replica traces back to a measurement of the capture, verified by re-rendering and diffing. Three skills, a measuring toolkit, fourteen worked examples. Apache-2.0.",
+      "date": "2026-09-14",
+      "dateModified": "2026-09-14",
+      "author": "OPC Team",
+      "category": "Product Launch",
+      "tags": [
+        "super-prototyping",
+        "design",
+        "prototyping",
+        "tldraw",
+        "ui-clone",
+        "design-tokens",
+        "claude-code-plugin"
+      ],
+      "readTime": "8 min",
+      "keywords": [
+        "super-prototyping",
+        "clone app UI from screenshot",
+        "screenshot to HTML",
+        "AI UI prototyping",
+        "tldraw canvas",
+        "design tokens from screenshots",
+        "Claude Code design plugin",
+        "HTML artboards",
+        "UI mockup AI agent",
+        "measured design system",
+        "iOS screen clone",
+        "agent plugin design",
+        "Codex plugin design",
+        "prototyping without Figma",
+        "AI design workflow"
+      ],
+      "image": "https://raw.githubusercontent.com/ReScienceLab/super-prototyping/main/assets/og-image.png",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Clone Any App Screen — and Prove It: Introducing super-prototyping",
+        "description": "An agent plugin that rebuilds product UI as self-contained HTML artboards on a local tldraw canvas, where every colour and metric traces back to a measurement of the source capture.",
+        "author": {
+          "@type": "Organization",
+          "name": "OPC Team",
+          "url": "https://opc.dev"
+        },
+        "datePublished": "2026-09-14",
+        "dateModified": "2026-09-14",
+        "publisher": {
+          "@type": "Organization",
+          "name": "OPC Skills",
+          "url": "https://opc.dev",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://opc.dev/opc-logo.svg"
+          }
+        },
+        "image": "https://raw.githubusercontent.com/ReScienceLab/super-prototyping/main/assets/og-image.png",
+        "mainEntityOfPage": "https://opc.dev/blog/super-prototyping-measured-ui-clones"
+      },
+      "faq": [
+        {
+          "question": "Do I need Figma or any design tool to use super-prototyping?",
+          "answer": "No. Boards are plain .html files the canvas reads straight from a directory in your project. No registry, no build step, no design tool. They live in your repo and diff in git like any other source file."
+        },
+        {
+          "question": "How is this different from screenshot-to-code?",
+          "answer": "Screenshot-to-code infers values from a glance at the image. clone-prototype measures them: it grids the capture, runs a colour census over each named region, records the evidence per token, then re-renders the generated boards and diffs them against the capture until the numbers agree."
+        },
+        {
+          "question": "Does super-prototyping only handle iOS screens?",
+          "answer": "The iPhone frame is a built-in spec at 393 x 852 pt, but a board is arbitrary self-contained HTML inside a 478 x 980 shape box. Web and desktop screens are built the same way."
+        },
+        {
+          "question": "Can I design screens that have no reference to copy?",
+          "answer": "Yes, that is the new-ui-mock skill. It designs new screens on the same measured token block, including the empty, loading and error states, and side-by-side proposals."
+        },
+        {
+          "question": "Which AI agents can install it?",
+          "answer": "Claude Code, Codex, WorkBuddy/CodeBuddy, Hermes and Pi each have a one-line marketplace install. Anything else that reads SKILL.md installs with npx skills add ReScienceLab/super-prototyping. The measuring toolkit is one uv tool install per machine."
+        }
+      ],
+      "citations": [
+        {
+          "text": "super-prototyping - GitHub Source",
+          "url": "https://github.com/ReScienceLab/super-prototyping"
+        },
+        {
+          "text": "super-prototyping Homepage",
+          "url": "https://prototyping.rescience.com"
+        },
+        {
+          "text": "tldraw",
+          "url": "https://tldraw.dev"
+        },
+        {
+          "text": "Agent Plugins v1 Specification",
+          "url": "https://agent-plugins.org/specification"
+        },
+        {
+          "text": "Agent Skills Standard",
+          "url": "https://agentskills.io"
+        }
+      ]
+    },
+    {
       "slug": "archive-skill-session-knowledge",
       "title": "Stop Losing Context Between AI Sessions: Introducing the Archive Skill",
       "description": "Every AI coding session generates valuable knowledge that vanishes when the session ends. The Archive skill creates indexed, searchable markdown archives in your project so your AI agent can reuse past solutions. Free, no API keys, works with Claude Code, Cursor, Droid, and 12+ tools.",

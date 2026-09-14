@@ -863,7 +863,7 @@ Agent Skills Standard: https://agentskills.io
     main { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
     .section-title { font-family: var(--font-pixel); font-size: 12px; font-weight: 400; margin-bottom: 24px; text-align: center; }
     
-    .skills-grid { display: grid; gap: 20px; }
+    .skills-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
     .skill-card { border: 2px solid var(--black); padding: 24px; }
     .skill-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
     .skill-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
@@ -876,7 +876,7 @@ Agent Skills Standard: https://agentskills.io
     .github-link { color: var(--gray-400); padding: 4px; display: flex; align-items: center; }
     .github-link:hover { color: var(--black); }
     .skill-desc { font-size: 12px; color: var(--gray-600); margin-bottom: 12px; line-height: 1.6; }
-    .skill-auth-info { font-size: 11px; color: var(--gray-600); display: flex; align-items: flex-start; gap: 6px; margin-bottom: 10px; line-height: 1.6; }
+    .skill-auth-info { font-size: 11px; color: var(--gray-600); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px; margin-bottom: 10px; line-height: 1.6; }
     .skill-auth-info svg { flex-shrink: 0; margin-top: 2px; }
     .skill-auth-info code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 10px; }
     .skill-auth-info a { color: #6366f1; text-decoration: none; font-size: 10px; }
@@ -915,6 +915,18 @@ Agent Skills Standard: https://agentskills.io
     .commands-list { margin-top: 12px; display: flex; flex-direction: column; gap: 6px; }
     .commands-list code { font-size: 10px; padding: 6px 10px; background: var(--gray-50); border: 1px solid var(--gray-200); display: block; overflow-x: auto; }
     
+    .featured { max-width: 900px; margin: 0 auto; padding: 40px 24px 0; }
+    .featured-card { border: 2px solid var(--black); padding: 24px; }
+    .featured-banner { width: 100%; height: auto; display: block; margin-bottom: 20px; border: 1px solid var(--gray-200); }
+    .featured-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; }
+    .featured-head h3 { font-size: 16px; font-weight: 700; }
+    .featured-links { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    .featured-links a { display: flex; align-items: center; gap: 6px; padding: 10px 16px; border: 1px solid var(--black); font-size: 11px; text-decoration: none; color: var(--black); }
+    .featured-cta { background: var(--black); color: var(--white) !important; }
+    .featured-cta:hover { opacity: 0.85; }
+    .featured-gh:hover { background: var(--gray-100); }
+    .featured-gh svg { width: 14px; height: 14px; }
+
     .faq-section { max-width: 900px; margin: 0 auto; padding: 48px 24px; border-top: 1px solid var(--gray-200); }
     .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .faq-item { padding: 20px; border: 1px solid var(--gray-200); background: var(--gray-50); }
@@ -980,6 +992,8 @@ Agent Skills Standard: https://agentskills.io
       
       .commands-list code { font-size: 9px; white-space: nowrap; overflow-x: auto; display: block; }
       
+      .featured { padding: 32px 16px 0; }
+      .featured-card { padding: 16px; }
       .faq-section { padding: 32px 16px; }
       .faq-grid { grid-template-columns: 1fr; gap: 16px; }
       .faq-item { padding: 16px; }
@@ -1114,6 +1128,26 @@ Agent Skills Standard: https://agentskills.io
     </div>
   </section>
 
+  <section class="featured" aria-label="More from ReScience Lab">
+    <h2 class="section-title">More from ReScience Lab</h2>
+    <div class="featured-card">
+      <a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/ReScienceLab/super-prototyping/main/assets/banner.webp" alt="super-prototyping - HTML artboards on a local tldraw canvas" class="featured-banner" loading="lazy" decoding="async">
+      </a>
+      <div class="featured-head">
+        <h3><a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">super-prototyping</a></h3>
+        <span class="version">v1.2.0</span>
+        <span class="auth-tag free">Free</span>
+      </div>
+      <p class="skill-desc">Rebuild and design product UI as self-contained HTML artboards on a local tldraw canvas. Clone a real app from screenshots by measurement, design new screens from measured tokens, and drive the canvas that shows them.</p>
+      <div class="skill-triggers"><span class="trigger">design</span><span class="trigger">ui</span><span class="trigger">prototyping</span><span class="trigger">tldraw</span><span class="trigger">mockups</span><span class="trigger">screenshots</span><span class="trigger">design tokens</span></div>
+      <div class="featured-links">
+        <a href="https://prototyping.rescience.com" target="_blank" rel="noopener noreferrer" class="featured-cta">Visit prototyping.rescience.com &rarr;</a>
+        <a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer" class="featured-gh" title="super-prototyping on GitHub" aria-label="super-prototyping on GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+      </div>
+    </div>
+  </section>
+
   <main>
     <h2 class="section-title">Available Skills</h2>
     <div class="skills-grid">${skillCards}</div>
@@ -1168,7 +1202,7 @@ Agent Skills Standard: https://agentskills.io
   </section>
 
   <footer>
-    <p>2026 <a href="https://rescience.com" target="_blank" rel="noopener noreferrer">ReScience Lab</a> | <a href="mailto:hi@opc.dev">hi@opc.dev</a> | <a href="https://github.com/ReScienceLab/opc-skills" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="/skills.json">API</a></p>
+    <p>2026 <a href="https://rescience.com" target="_blank" rel="noopener noreferrer">ReScience Lab</a> | <a href="mailto:hi@opc.dev">hi@opc.dev</a> | <a href="https://github.com/ReScienceLab/opc-skills" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="/skills.json">API</a> | <a href="https://github.com/ReScienceLab/super-prototyping" target="_blank" rel="noopener noreferrer">super-prototyping</a></p>
   </footer>
 
   <div class="toast" id="toast">Copied to clipboard!</div>
@@ -2273,7 +2307,7 @@ async function renderBlogListPage(ctx) {
       </a>
       <div class="blog-content">
         <div class="blog-meta">
-          <time datetime="${post.date}">${new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</time>
+          <time datetime="${post.date}">${new Date(post.date).toLocaleDateString("en-US", { timeZone: "UTC", year: "numeric", month: "long", day: "numeric" })}</time>
           <span class="blog-category">${post.category}</span>
         </div>
         <h2><a href="/blog/${post.slug}">${post.title}</a></h2>
@@ -2813,7 +2847,7 @@ async function renderBlogPost(slug, ctx) {
       <h1>${post.title}</h1>
       <div class="article-meta">
         <span class="category-badge">${post.category}</span>
-        <span>📅 ${new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+        <span>📅 ${new Date(post.date).toLocaleDateString("en-US", { timeZone: "UTC", year: "numeric", month: "long", day: "numeric" })}</span>
         <span>✍️ ${post.author}</span>
         <span>⏱️ ${post.readTime}</span>
       </div>
