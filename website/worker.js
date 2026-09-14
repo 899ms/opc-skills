@@ -863,7 +863,7 @@ Agent Skills Standard: https://agentskills.io
     main { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
     .section-title { font-family: var(--font-pixel); font-size: 12px; font-weight: 400; margin-bottom: 24px; text-align: center; }
     
-    .skills-grid { display: grid; gap: 20px; }
+    .skills-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
     .skill-card { border: 2px solid var(--black); padding: 24px; }
     .skill-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
     .skill-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
@@ -876,7 +876,7 @@ Agent Skills Standard: https://agentskills.io
     .github-link { color: var(--gray-400); padding: 4px; display: flex; align-items: center; }
     .github-link:hover { color: var(--black); }
     .skill-desc { font-size: 12px; color: var(--gray-600); margin-bottom: 12px; line-height: 1.6; }
-    .skill-auth-info { font-size: 11px; color: var(--gray-600); display: flex; align-items: flex-start; gap: 6px; margin-bottom: 10px; line-height: 1.6; }
+    .skill-auth-info { font-size: 11px; color: var(--gray-600); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px; margin-bottom: 10px; line-height: 1.6; }
     .skill-auth-info svg { flex-shrink: 0; margin-top: 2px; }
     .skill-auth-info code { background: #f3f4f6; padding: 1px 5px; border-radius: 3px; font-size: 10px; }
     .skill-auth-info a { color: #6366f1; text-decoration: none; font-size: 10px; }
