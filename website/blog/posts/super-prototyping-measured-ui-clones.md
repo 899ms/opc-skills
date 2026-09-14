@@ -124,6 +124,10 @@ sp-canvas start
 
 It finds the bundled canvas app, installs its dependencies on first run, boots on `127.0.0.1:5173` against `./mockups/canvases`, and prints the address. `sp-canvas status` and `sp-canvas stop` do what they say.
 
+![The super-prototyping canvas: an X iOS clone on the board grid, with 07-profile.html open in the inspector](https://raw.githubusercontent.com/ReScienceLab/opc-skills/main/website/blog/2026-09-14-super-prototyping-canvas.png)
+
+*An `x-ios` clone on the canvas. Boards sit on the grid at left; clicking one opens it in the inspector at right — live at its real 393 × 852 pt, with its layer tree, its assets, and the count of design tokens it actually uses (20 of 60). Nothing here is a picture of a screen: each board is the HTML, rendering.*
+
 Deep-link a page with `?canvas=<slug>`, and one board of it with `?canvas=<slug>#<file>` — it opens in the inspector with the camera on it, and clicking any board writes that link into the address bar. The URL in the bar is always the link to share. A board folder added after boot appears on its own.
 
 Every board is clipped to a 478 × 980 shape box. The iPhone frame is 393 × 852 pt at 1pt = 1px, with a 54px status bar, a 125 × 36 Dynamic Island and a 139 × 5 home indicator.
