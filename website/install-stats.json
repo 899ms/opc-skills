@@ -1,7 +1,7 @@
 {
-  "total": 68723,
+  "total": 68825,
   "skills": {
-    "seo-geo": 48000,
+    "seo-geo": 48100,
     "reddit": 3300,
     "logo-creator": 3000,
     "nanobanana": 2900,
@@ -11,7 +11,7 @@
     "banner-creator": 1800,
     "requesthunt": 1800,
     "archive": 1200,
-    "add-new-opc-skill": 23
+    "add-new-opc-skill": 25
   },
   "source": "https://skills.sh/resciencelab/opc-skills"
 }
